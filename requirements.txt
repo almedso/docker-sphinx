@@ -1,0 +1,7 @@
+sphinxcontrib-traceability
+sphinxcontrib-sadisplay
+sphinxcontrib-actdiag
+sphinxcontrib-aafig
+sphinx-rtd-theme
+aafigure
+actdiag
