@@ -2,6 +2,7 @@ sphinxcontrib-traceability
 sphinxcontrib-sadisplay
 sphinxcontrib-actdiag
 sphinxcontrib-aafig
+sphinxcontrib-plantuml
 sphinx-rtd-theme
 aafigure
 actdiag

@@ -14,11 +14,13 @@ RUN apt-get update && apt-get install -y -q python-sphinx \
                                             texlive-latex-extra \
                                             texlive-lang-german \
                                             pandoc \
-                                            build-essential
+                                            build-essential \
+                                            plantuml
 
 
 RUN mkdir -p /documents
 COPY requirements.txt /documents
+
 WORKDIR /documents
 RUN pip install -r requirements.txt
 COPY . /documents
@@ -27,4 +29,5 @@ VOLUME /documents
 
 # provide the build command explicitely
 COPY build-doc.sh /
+COPY svg-to-pdf.mk /
 CMD /build-doc.sh
